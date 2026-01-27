@@ -1,13 +1,13 @@
-package com.diego.GerenciamentoTarefas;
+	package com.diego.GerenciamentoTarefas;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+	import org.springframework.boot.SpringApplication;
+	import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class GerenciamentoTarefasApplication {
+	@SpringBootApplication
+	public class GerenciamentoTarefasApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(GerenciamentoTarefasApplication.class, args);
+		public static void main(String[] args) {
+			SpringApplication.run(GerenciamentoTarefasApplication.class, args);
+		}
+
 	}
-
-}
