@@ -1,5 +1,6 @@
 package com.diego.GerenciamentoTarefas.controllers;
 
+import com.diego.GerenciamentoTarefas.models.Todo;
 import com.diego.GerenciamentoTarefas.repositories.TodoRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,6 +21,14 @@ public class TodoController {
         return new ModelAndView(
                 "todo/list",
                 Map.of("todos", todoRepository.findAll())
+        );
+    }
+
+    @GetMapping("/create")
+    public ModelAndView create() {
+        return new ModelAndView(
+                "todo/form",
+                Map.of("todo", new Todo())
         );
     }
 }
