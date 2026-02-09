@@ -1,5 +1,7 @@
 package com.diego.GerenciamentoTarefas.models;
 import jakarta.persistence.*;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.Objects;
@@ -14,6 +16,7 @@ public class Todo {
     @Column(nullable = false)
     private LocalDateTime createdAt;
     @Column(nullable = false)
+    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
     private LocalDate deadLine;
     @Column(nullable = true)
     private LocalDate fineshedAt;
